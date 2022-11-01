@@ -11,7 +11,7 @@ body {
   color: var(--primary-color);
 }
 
-.site-nav .logo {
+.logo {
   color: #000000;
 }
 
@@ -68,4 +68,13 @@ h3 {
 .site-footer .mail,
 .site-footer .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-button {
+  background-color: var(--bg-secondary-color);
+  color: var(--secondary-color);
+}
+
+.project-title {
+  color: var(--secondary-color);
 }
