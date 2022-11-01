@@ -1,11 +1,71 @@
 :root {
-  primary-color: #757575;
-  secondary-color: #212121;
-  accent-color: #2196f3;
-  background-primary-color: #2f303a;
-  background-secondary-color: #f5f4fa;
-  white-color: #ffffff;
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --accent-color: #2196f3;
+  --bg-primary-color: #2f303a;
+  --bg-secondary-color: #f5f4fa;
+  --white-color: #ffffff;
 }
 body {
   background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.site-nav .logo {
+  color: #000000;
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+.site-nav a {
+  color: var(--secondary-color);
+}
+
+.contacts a {
+  color: var(--primary-color);
+}
+
+.hero,
+footer {
+  background-color: var(--bg-primary-color);
+}
+
+.hero {
+  color: var(--white-color);
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+h1 {
+  color: var(--white-color);
+}
+
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+
+.team {
+  background-color: var(--bg-secondary-color);
+}
+.card {
+  background-color: var(--white-color);
+}
+
+.site-footer .logo {
+  color: var(--white-color);
+}
+
+.site-footer .map {
+  color: var(--white-color);
+}
+
+.site-footer .mail,
+.site-footer .tel {
+  color: rgba(255, 255, 255, 0.6);
 }
