@@ -5,22 +5,59 @@
   --bg-primary-color: #2f303a;
   --bg-secondary-color: #f5f4fa;
   --white-color: #ffffff;
+  --white-color-transparent: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --button-active-color: #188ce8;
 }
 body {
   background-color: var(--white-color);
   color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
 }
 
-.logo {
-  color: #000000;
+a {
+  text-decoration: none;
+}
+
+.site-header a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.site-header a:hover,
+.site-header a:focus,
+.site-footer a:hover,
+.site-footer a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .logo,
+.site-footer .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.site-nav .logo {
+  color: var(--logo-color);
 }
 
 .web {
   color: var(--accent-color);
 }
 
+.list {
+  list-style: none;
+}
+
 .site-nav a {
   color: var(--secondary-color);
+}
+
+.site-nav .current {
+  color: var(--accent-color);
 }
 
 .contacts a {
@@ -28,7 +65,7 @@ body {
 }
 
 .hero,
-footer {
+.site-footer {
   background-color: var(--bg-primary-color);
 }
 
@@ -36,18 +73,55 @@ footer {
   color: var(--white-color);
 }
 
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hero-button:active {
+  background-color: var(--button-active-color);
 }
 
-h1 {
-  color: var(--white-color);
-}
-
-h2,
-h3 {
+.title,
+.features-title,
+.card-title,
+.project-title {
   color: var(--secondary-color);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.features-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -56,9 +130,28 @@ h3 {
 .card {
   background-color: var(--white-color);
 }
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.card-desc {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
 
 .site-footer .logo {
   color: var(--white-color);
+}
+
+.site-footer address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .site-footer .map {
@@ -67,14 +160,36 @@ h3 {
 
 .site-footer .mail,
 .site-footer .tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color-transparent);
 }
 
 .filter-button {
   background-color: var(--bg-secondary-color);
   color: var(--secondary-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 .project-title {
   color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
