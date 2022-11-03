@@ -79,6 +79,7 @@ a {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
@@ -89,7 +90,6 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   cursor: pointer;
 }
 .hero-button:active {
@@ -104,7 +104,6 @@ a {
 }
 
 .features-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -118,7 +117,6 @@ a {
 }
 
 .title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -181,7 +179,6 @@ a {
 
 .project-title {
   color: var(--secondary-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.88;
   letter-spacing: 0.06em;
